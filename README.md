@@ -2,7 +2,7 @@
 
 In this short tutorial, we will guide you through setting up the system environment for running the code, which used for NIR-to-RGB translation.
 
-### Requirments
+## Requirments
 
 - *Ubuntu 16.04*
 - *CUDA 9.1*
