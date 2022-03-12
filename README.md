@@ -1,4 +1,4 @@
-## Optimal LED Spectral Multiplexing for NIR2RGB Translation
+# Optimal LED Spectral Multiplexing for NIR2RGB Translation
 
 In this short tutorial, we will guide you through setting up the system environment for running the code, which used for NIR-to-RGB translation.
 
