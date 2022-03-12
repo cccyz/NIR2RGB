@@ -44,8 +44,7 @@ The results are stored in `results/experiment_name` folder.
 
 ## RGB Variance Maximization (RVM)
 
-Run the following command to see the results of RVM with 3 cameras:
-
+    Run the following command to see the results of RVM with 3 cameras:
     ```
     python util/rvm.py
     ```
