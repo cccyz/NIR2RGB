@@ -8,14 +8,15 @@ In this short tutorial, we will guide you through setting up the system environm
 - *CUDA 9.1*
 - *pytorch 1.7.1*
 
-### Datasets
+## Datasets
 
 1. We have released our hyperspectral images dataset [IDH](https://drive.google.com/file/d/1qDazg8VAYv8ZKpDfKjIBFiH3IHNPDMbb/view?usp=sharing), the wavelength range from 420nm to 1000nm with 10nm intervals.
 
 2. If you only want to go through our model, we suggest to download the processed [Dataset](https://drive.google.com/file/d/1IoMJ7a0LidpMywXDmfJa3m8oifGHkq8O/view?usp=sharing) and unzip it into `datasets/`. More details see `datasets/readme.txt`.
 
-### Training For TLM
+## TLM
 
+### Training phase
 1.
     ```
     python train.py --dataroot path/to/the/datasets/icvl --name experiment_name
