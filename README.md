@@ -36,20 +36,16 @@ In this short tutorial, we will guide you through setting up the system environm
 | icvl |  15S5C |[model](https://drive.google.com/file/d/12Z8x_6KEpDKzEfFSXyy0eSdfA6oFEt71/view?usp=sharing)    |
 
 
-3. Translation:
-
-After the training step, or download the pretrained model and put them in `checkpoints/experiment_name` folder.
-
-Run the following command to translate NIR images to RGB images:
-    
+3. After the training step, or download the pretrained model and put them in `checkpoints/experiment_name` folder. Run the following command to translate NIR images to RGB images:
+    ```
     python test.py --dataroot path/to/the/datasets/icvl/test --name experiment_name
-    
+    ```
 The results are stored in `results/experiment_name` folder. 
 
 ## RGB Variance Maximization (RVM)
 
 Run the following command to see the results of RVM with 3 cameras:
-    
+    ```
     python util/rvm.py
-    
+    ```
     
