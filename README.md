@@ -18,9 +18,9 @@ In this short tutorial, we will guide you through setting up the system environm
 
 ### Training phase
 1. Take ICVL for example:
-    ```
+    
     python train.py --dataroot path/to/the/datasets/icvl/train --name experiment_name
-    ```
+    
     
 2. On training image outputs and model are stored in `checkpoints/experiment_name`, if you have multi GPUs, using `--gpu_ids 0` to specify the gpu you want to use.
 
