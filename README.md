@@ -14,41 +14,42 @@ In this short tutorial, we will guide you through setting up the system environm
 
 2. If you only want to go through our model, we suggest to download the processed [Dataset](https://drive.google.com/file/d/1IoMJ7a0LidpMywXDmfJa3m8oifGHkq8O/view?usp=sharing) and unzip it into `datasets/`. More details see `datasets/readme.txt`.
 
-## TLM
+## Target Loss Minimization (TLM)
 
 ### Training phase
 1.
     ```
-    python train.py --dataroot path/to/the/datasets/icvl --name experiment_name
+    python train.py --dataroot path/to/the/datasets/icvl/train --name experiment_name
     ```
     
 2. On training image outputs and model are stored in `checkpoints/experiment_name`, if you have multi GPUs, using `--gpu_ids 0` to specify the gpu you want to use.
 
 
-### Testing
+### Testing phase
 
-First, make sure that the data in  `code/datasets/icvl/test` folder is avaliable.
+1. First, make sure that the data in `datasets/icvl/test` folder is avaliable.
 
-#### Pretrained models 
+2. Pretrained model:
 
 |  Dataset    | Camera   | Model Link     |
 |-------------|------------|-------------------|
 | icvl |  15S5C |[model](https://drive.google.com/file/d/12Z8x_6KEpDKzEfFSXyy0eSdfA6oFEt71/view?usp=sharing)    |
 
 
-#### Translation
+3. Translation:
 
 After the training step, or download the pretrained model and put them in `checkpoints/experiment_name` folder.
 
-Run the following command to translate NIR images to RGB images
+Run the following command to translate NIR images to RGB images:
     
-    python train.py --dataroot path/to/the/datasets/icvl --name experiment_name
+    python test.py --dataroot path/to/the/datasets/icvl/test --name experiment_name
     
 The results are stored in `results/experiment_name` folder. 
-the output contain the translation result, original nir image and rgb image
 
-### RVM
-Run the following command to see the results of RVM with 3 cameras
+## RGB Variance Maximization (RVM)
+
+Run the following command to see the results of RVM with 3 cameras:
     
     python util/rvm.py
+    
     
