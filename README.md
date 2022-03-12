@@ -17,7 +17,7 @@ In this short tutorial, we will guide you through setting up the system environm
 ## Target Loss Minimization (TLM)
 
 ### Training phase
-1.
+1. Take ICVL for example:
     ```
     python train.py --dataroot path/to/the/datasets/icvl/train --name experiment_name
     ```
