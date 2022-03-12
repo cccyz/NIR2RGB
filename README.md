@@ -1,23 +1,27 @@
 ## Optimal LED Spectral Multiplexing for NIR2RGB Translation
 
-In this short tutorial, we will guide you through setting up the system environment for running the code, which used for nir to rgb translation
+In this short tutorial, we will guide you through setting up the system environment for running the code, which used for NIR-to-RGB translation.
 
 ### Requirments
 
-- Hardware: PC with NVIDIA GPU which have more than 8GB memory. 
-- Software: *Ubuntu 16.04*, *CUDA 9.1*, *Anaconda3*, *pytorch 1.7.1*
+- *Ubuntu 16.04*
+- *CUDA 9.1*
+- *pytorch 1.7.1*
 
+### Datasets
+
+1. We have released our hyperspectral images dataset [IDH](https://drive.google.com/file/d/1qDazg8VAYv8ZKpDfKjIBFiH3IHNPDMbb/view?usp=sharing), the wavelength range from 420nm to 1000nm with 10nm intervals.
+
+2. If you only want to go through our model, we suggest to download the processed [Dataset](https://drive.google.com/file/d/1IoMJ7a0LidpMywXDmfJa3m8oifGHkq8O/view?usp=sharing) and unzip it into `datasets/`. More details see `datasets/readme.txt`.
 
 ### Training For TLM
 
-1. Download the [dataset](https://drive.google.com/file/d/1IoMJ7a0LidpMywXDmfJa3m8oifGHkq8O/view?usp=sharing) you want to use and put it into `code/datasets`. More details see `data/Datasets/readme.txt`
-
-2. Start training
+1.
     ```
     python train.py --dataroot path/to/the/datasets/icvl --name experiment_name
     ```
     
-3. On training image outputs and model are stored in `checkpoints/experiment_name`, if you have multi GPUs, using `--gpu_ids 0` to specify the gpu you want to use.
+2. On training image outputs and model are stored in `checkpoints/experiment_name`, if you have multi GPUs, using `--gpu_ids 0` to specify the gpu you want to use.
 
 
 ### Testing
