@@ -36,7 +36,7 @@ This paper has been accpected by **CVPR2022**. In this short tutorial, we will g
 
 |  Dataset    | Camera   | Model Link     |
 |-------------|------------|-------------------|
-| icvl |  15S5C |[model](https://drive.google.com/file/d/12Z8x_6KEpDKzEfFSXyy0eSdfA6oFEt71/view?usp=sharing)    |
+| ICVL |  15S5C |[model](https://drive.google.com/file/d/12Z8x_6KEpDKzEfFSXyy0eSdfA6oFEt71/view?usp=sharing)    |
 
 
 3. After the training step, or download the pretrained model and put them in `checkpoints/experiment_name` folder. Run the following command to translate NIR images to RGB images:
