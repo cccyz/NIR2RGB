@@ -1,6 +1,9 @@
 # Optimal LED Spectral Multiplexing for NIR2RGB Translation
 
-In this short tutorial, we will guide you through setting up the system environment for running the code, which used for NIR-to-RGB translation.
+[Lei Lui](https://github.com/loklz), [Yuze Chen](https://github.com/cccyz), [Junchi Yan](https://thinklab.sjtu.edu.cn), Yinqiang Zheng
+
+This paper has been accpected by CVPR2022. In this short tutorial, we will guide you through setting up the system environment for running the code, which used for NIR-to-RGB translation.
+
 
 ## Requirments
 
